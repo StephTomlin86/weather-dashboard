@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="assets/script.js"></script>
+    <script type="text/javascript"></script>
+    <title>WeatherApp</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <header id="#header">
+        <h1 id="title">Weather Dashboard</h1>
+      </header>
+      <main class="row">
+        <section class="col-4">
+          <form class="row" id="searchCities">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search for a city:"
+              id="city-input"
+              value=""
+            />
+            <button type="button" id="search" class="fas fa-search"></button>
+          </form>
+          <div class="row"></div>
+          <ul id="citiesList"></ul>
+        </section>
+        <section class="col-8">
+          <div class="row"></div>
+          <div class="col" id="chosenCity"></div>
+          <div class="row" id="fiveDay">
+            <div class="card-deck col">
+              <div
+                class="card text-white bg-primary mb-3"
+                style="max-width: 18rem;"
+              >
+                <div class="card-body-one"></div>
+                <div class="card-body-two"></div>
+                <div class="card-body-three"></div>
+                <div class="card-body-four"></div>
+                <div class="card-body-five"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>
